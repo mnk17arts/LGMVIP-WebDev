@@ -1,0 +1,430 @@
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Righteous&display=swap')
+
+// MIXINS
+@mixin holycenter 
+    display : flex
+    justify-content : center
+    align-items : center
+@keyframes Navhover 
+    0% 
+        border-bottom : 2px solid #f00
+    25%
+        border-bottom : 2px solid #fff
+    50%
+        border-bottom : 2px solid #0f0
+    75% 
+        border-bottom : 2px solid #158beb  
+    100%
+        border-bottom : 2px solid orangered     
+
+    // SCROLLBAR
+::-webkit-scrollbar
+    width : 5px
+::-webkit-scrollbar-track
+    background : #000
+::-webkit-scrollbar-thumb
+    background : lighten(orangered, 10%)
+    border-color :  lighten(orangered, 15%)
+    border-radius : 15px
+    border-style : inset
+::-webkit-scrollbar-thumb:hover
+    background : orangered                
+    border-color : orangered
+ 
+
+// NAVIGATION BAR
+.navbar
+    position : fixed
+    z-index : 1000
+    width : 100%
+.navbar-brand
+    letter-spacing : 2px
+    border-bottom : 2px solid transparent
+    font-family : 'Righteous', cursive
+
+.nav-link
+    border-bottom : 2px solid transparent
+    font-family : cursive 
+    &:hover
+        animation-name : Navhover
+        animation-duration : 3s
+        animation-timing-function : linear
+        animation-iteration-count : infinite      
+
+    
+// HOME
+#home
+    min-height : 100vh
+    // margin-top: -20px
+.homeimg1
+    background-image : linear-gradient(to right,#4444,#5555), url('../images/home/img1.jpg')
+    background-size : cover 
+    background-position : center 
+    opacity : 0.9
+    height : 100vh
+.homeimg2
+    background-image : linear-gradient(to right,#4444,#5555), url('../images/home/img2.jpg')
+    background-size : cover 
+    background-position : center 
+    opacity : 0.9
+    height : 100vh
+.homeimg3
+    background-image : linear-gradient(to right,#4444,#5555), url('../images/home/img3.jpg')
+    background-size : cover 
+    background-position : center 
+    opacity : 0.9
+    height : 100vh
+.homeimg4
+    background-image : linear-gradient(to right,#4444,#5555), url('../images/home/img4.jpg')
+    background-size : cover 
+    background-position : center 
+    opacity : 0.9
+    height : 100vh   
+.carousel-item
+    z-index : 0
+    visibility : 50%
+.hometxt
+    position : absolute
+    top : 5%
+    left : 5%
+    color : #fff 
+    z-index : 100
+     
+.btn
+    background-color : #333
+    border-color : orangered
+    &:hover
+        background-color : darken(#333,15% )
+        border-color : orangered
+        color : orangered
+
+    
+        // WELCOME
+#welcome
+    display : flex
+    justify-content : center    
+    background-color : #212121  
+    color : #fff         
+.welcomebox 
+    max-width : 800px
+    width : 80vw
+    .welcometitle
+        text-align : center
+        font-family : cursive 
+    .welcomebody 
+        display : flex
+        justify-content : center
+        align-items : center  
+        .welcomebodytxt, .welcomebodyicon
+            width : 50%
+        .welcomebodyicon
+            margin-top : -30px 
+            padding-left : 30px 
+            font-size : 100px 
+
+.welcomecards
+    display : flex
+    flex-wrap : wrap 
+    // flex-direction : column
+    .welcomecard
+        padding : 30px 15px 
+        text-align : center
+        border : 2px solid transparent
+        border-radius : 15px
+        width : 250px
+        background-color : #252525
+        margin : 2.5px 
+        b
+        &:hover
+            border-color : orangered 
+        p
+            color : #aaa
+        .fas
+            background-color : orangered
+            padding : 10px
+            font-size : 30px
+            border-radius : 50%      
+ 
+
+// PROJECTS
+
+#projects
+    display : flex
+    justify-content : center 
+    align-items : center 
+    background-color : #212121  
+    color : #fff            
+    .projectsbox
+        .projectstitle
+            text-align : center
+            font-family : cursive 
+        .projectsbody
+            display : flex
+            flex-wrap : wrap
+            justify-content : center
+            align-items : center              
+        .projectscard
+            width : 250px
+            cursor : default
+            background-color : #272727  
+            margin : 2.5px 
+            .projectsimg
+                opacity : 0.6  
+            div
+                p
+                    color : #aaa
+                padding : 20px
+            &:hover
+                .projectsimg
+                    opacity : 1
+                div
+                    background-color : lighten(orangered, 20% )     
+                    p
+                        color: #333
+                    
+// PRICING TABLE
+#pricing
+    background-color : #212121  
+    color : #fff         
+    display : flex
+    justify-content : center 
+    align-items : center    
+    .pricingbox
+        min-height : 100vh 
+        
+        .pricingtitle
+            text-align : center
+            font-family : cursive 
+        .pricingbody
+            display : flex
+            flex-wrap : wrap
+            justify-content : center
+            align-items : center              
+        .pricingcard
+            color: #000
+            h5
+                font-weight : 700 
+            h6
+                color : #777
+            p
+                font-size : 0.8rem 
+                font-weight : 600
+            text-align : center 
+            width : 250px
+            cursor : pointer
+            padding : 50px 20px
+            border-radius :  0px 25px 25px 25px
+            background-color : #ccc
+            margin : 3px 
+            &:hover
+                background-color : #ffa600
+                .btn
+                    background-color: orangered
+                    color: #000
+                    &:hover
+                        border-color: #000
+
+    // VIDEO PROJECTS
+#videoprojects
+    // min-height : 100vh 
+    background-color : #111
+    background-image : linear-gradient(to bottom, #212121, #181818, #151515, #121212, #111 70%)   
+    color : #fff 
+    .videoprojectstitle
+        text-align : center
+        font-family : cursive
+    .vp1, .vp2, .vp3
+        display : flex
+        flex-direction : column 
+        justify-content : center  
+        align-items : center
+        
+// TEAM
+#team
+    display : flex
+    justify-content : center 
+    min-height : 100vh 
+    background-color : #111   
+    color : #fff
+    .teambox
+        max-width : 900px
+        width : 80vw
+        .teamtitle
+            text-align : center 
+            font-family : cursive 
+        .teamcards
+            display : flex
+            flex-wrap : wrap
+            .teamcard
+                width : 250px
+                @include holycenter
+                flex-direction : column
+                padding : 10px 
+                border-radius : 10px
+                margin : 2.5px
+                h5
+                    border-bottom : 1px solid transparent 
+                p
+                    color: #aaa
+                .teamimg
+                    position : relative
+                    border : 5px solid transparent
+                    border-radius : 50%  
+                    .icons
+                        // z-index : 1000 
+                        position : absolute
+                        top : 45%
+                        left : 25%
+                        i
+                            cursor : pointer
+                            padding-right : 10px
+                        // bottom : 0px
+                        // right : 0px 
+                        opacity : 0 
+                &:hover
+                    background-color : #000 
+                    h5
+                        border-color : orangered 
+                    .teamimg
+                        border-color : orangered
+                        img
+                            opacity : 0.3
+                            
+                        .icons
+                            opacity : 1
+                            i:hover
+                                color: orangered 
+ 
+// LIFE IN
+#life
+    background-color : #212121  
+    background-image : linear-gradient(to bottom, #111, #151515, #191919, #212121 50%, #191919, #151515, #111) 
+    color : #fff         
+    display : flex
+    justify-content : center 
+    align-items : center 
+    overflow : hidden
+    .lifebox
+        @include holycenter
+        flex-direction : column
+        overflow : hidden 
+        .lifetitle
+            text-align : center
+            font-family : cursive
+        #lifeinmessi
+            @include holycenter
+            flex-direction : column
+            .carousel-inner
+                display : flex
+                overflow : hidden 
+            .lifesliders
+                background-color : #252525 
+                .carousel-control-prev, carousel-control-next
+                    width : 10% 
+
+                img
+                    width : 16% 
+                            
+
+// NEWSLETTER
+#news
+    background-color : #111 
+    background-image : linear-gradient(to bottom, #111111f3, #111112af, #111113b0),url('../images/news/img.jpg')        
+    background-size : cover 
+    background-position : center
+    color : #fff
+    min-height :  400px 
+    @include holycenter
+    .newsbox
+        max-width : 800px
+        width : 90vw   
+        .newstitle
+            text-align : center 
+            font-family : cursive
+
+// BLOGS
+#blog
+    background-color : #111 
+    color : #fff
+    @include holycenter
+    .blogbox
+        max-width : 930px
+        widows : 95vw  
+        .blogbody
+            padding-bottom : 20px 
+            @include holycenter
+            flex-wrap : wrap 
+            .blogcard
+                img
+                    opacity : 0.8 
+                text-align : center 
+                background-color : #222 
+                div
+                    padding : 10px 
+                margin : 5px 
+                &:hover
+                    img
+                        opacity : 1
+                    background-color : #6d563b  
+        
+// CONTACT FORM
+#contact
+    min-height : 500px
+    background-color : #222
+    color : #fff
+    @include holycenter
+    .contactbox
+        @include holycenter
+        flex-wrap : wrap-reverse 
+        width : 100vw
+        .map, .contactform
+            width : 50%
+            min-width : 300px  
+        .map
+            iframe
+                padding-top : 30px 
+                width : 100%
+                height : 500px           
+        .contactform
+            form
+                padding-left : 10px  
+                min-width : 300px
+                width : 75%
+
+// FOOTER
+#footer
+    min-height : 150px
+    background-color : #333
+    color : #999
+    @include holycenter
+    flex-direction : column 
+    .copyrights
+        a
+            color : #fff
+            &:hover
+                color : orangered
+    .footerbox
+        padding-top : 25px 
+        max-width : 900px
+        width : 100vw  
+        @include holycenter
+        flex-wrap : wrap 
+        div
+            width : 200px
+            text-align : center
+            padding-bottom : 20px 
+            i
+                padding : 5px
+                cursor : pointer
+                &:hover
+                    color : orangered 
+            h6
+                color : #ccc
+            p
+                font-size : 0.8rem        
+
+.gradient
+    height : 40px
+    background-image : linear-gradient(to bottom, #333333, #303030, #272727, #222222, #151515, #101010, #050505, #000)      

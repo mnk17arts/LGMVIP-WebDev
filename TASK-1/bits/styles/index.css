@@ -1,0 +1,773 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&family=Righteous&display=swap");
+@-webkit-keyframes Navhover {
+  0% {
+    border-bottom: 2px solid #f00;
+  }
+  25% {
+    border-bottom: 2px solid #fff;
+  }
+  50% {
+    border-bottom: 2px solid #0f0;
+  }
+  75% {
+    border-bottom: 2px solid #158beb;
+  }
+  100% {
+    border-bottom: 2px solid orangered;
+  }
+}
+@keyframes Navhover {
+  0% {
+    border-bottom: 2px solid #f00;
+  }
+  25% {
+    border-bottom: 2px solid #fff;
+  }
+  50% {
+    border-bottom: 2px solid #0f0;
+  }
+  75% {
+    border-bottom: 2px solid #158beb;
+  }
+  100% {
+    border-bottom: 2px solid orangered;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6a33;
+  border-color: #ff7d4d;
+  border-radius: 15px;
+  border-style: inset;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orangered;
+  border-color: orangered;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+  border-bottom: 2px solid transparent;
+  font-family: 'Righteous', cursive;
+}
+
+.nav-link {
+  border-bottom: 2px solid transparent;
+  font-family: cursive;
+}
+
+a.active {
+  color: orangered !important;
+}
+
+.nav-link:hover {
+  -webkit-animation-name: Navhover;
+          animation-name: Navhover;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#home {
+  min-height: 100vh;
+}
+
+.homeimg1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#4444), to(#5555)), url("../images/home/img1.jpg");
+  background-image: linear-gradient(to right, #4444, #5555), url("../images/home/img1.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+.homeimg2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#4444), to(#5555)), url("../images/home/img2.jpg");
+  background-image: linear-gradient(to right, #4444, #5555), url("../images/home/img2.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+.homeimg3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#4444), to(#5555)), url("../images/home/img3.jpg");
+  background-image: linear-gradient(to right, #4444, #5555), url("../images/home/img3.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+.homeimg4 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#4444), to(#5555)), url("../images/home/img4.jpg");
+  background-image: linear-gradient(to right, #4444, #5555), url("../images/home/img4.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+.carousel-item {
+  z-index: 0;
+  visibility: 50%;
+}
+
+.hometxt {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: #fff;
+  z-index: 100;
+}
+
+.btn {
+  background-color: #333;
+  border-color: orangered;
+}
+
+.btn:hover {
+  background-color: #0d0d0d;
+  border-color: orangered;
+  color: orangered;
+}
+
+#welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #212121;
+  color: #fff;
+}
+
+.welcomebox {
+  max-width: 800px;
+  width: 80vw;
+}
+
+.welcomebox .welcometitle {
+  text-align: center;
+  font-family: cursive;
+}
+
+.welcomebox .welcomebody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcomebox .welcomebody .welcomebodytxt, .welcomebox .welcomebody .welcomebodyicon {
+  width: 50%;
+}
+
+.welcomebox .welcomebody .welcomebodyicon {
+  margin-top: -30px;
+  padding-left: 30px;
+  font-size: 100px;
+}
+
+.welcomecards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.welcomecards .welcomecard {
+  padding: 30px 15px;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  width: 250px;
+  background-color: #252525;
+  margin: 2.5px;
+}
+
+.welcomecards .welcomecard:hover {
+  border-color: orangered;
+}
+
+.welcomecards .welcomecard p {
+  color: #aaa;
+}
+
+.welcomecards .welcomecard .fas {
+  background-color: orangered;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+#projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #212121;
+  color: #fff;
+}
+
+#projects .projectsbox .projectstitle {
+  text-align: center;
+  font-family: cursive;
+}
+
+#projects .projectsbox .projectsbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .projectsbox .projectscard {
+  width: 250px;
+  cursor: default;
+  background-color: #272727;
+  margin: 2.5px;
+}
+
+#projects .projectsbox .projectscard .projectsimg {
+  opacity: 0.6;
+}
+
+#projects .projectsbox .projectscard div {
+  padding: 20px;
+}
+
+#projects .projectsbox .projectscard div p {
+  color: #aaa;
+}
+
+#projects .projectsbox .projectscard:hover .projectsimg {
+  opacity: 1;
+}
+
+#projects .projectsbox .projectscard:hover div {
+  background-color: #ff8f66;
+}
+
+#projects .projectsbox .projectscard:hover div p {
+  color: #333;
+}
+
+#pricing {
+  background-color: #212121;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pricing .pricingbox {
+  min-height: 100vh;
+}
+
+#pricing .pricingbox .pricingtitle {
+  text-align: center;
+  font-family: cursive;
+}
+
+#pricing .pricingbox .pricingbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pricing .pricingbox .pricingcard {
+  color: #000;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  padding: 50px 20px;
+  border-radius: 0px 25px 25px 25px;
+  background-color: #ccc;
+  margin: 3px;
+}
+
+#pricing .pricingbox .pricingcard h5 {
+  font-weight: 700;
+}
+
+#pricing .pricingbox .pricingcard h6 {
+  color: #777;
+}
+
+#pricing .pricingbox .pricingcard p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+#pricing .pricingbox .pricingcard:hover {
+  background-color: #ffa600;
+}
+
+#pricing .pricingbox .pricingcard:hover .btn {
+  background-color: orangered;
+  color: #000;
+}
+
+#pricing .pricingbox .pricingcard:hover .btn:hover {
+  border-color: #000;
+}
+
+#videoprojects {
+  background-color: #111;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#212121), color-stop(#181818), color-stop(#151515), color-stop(#121212), color-stop(70%, #111));
+  background-image: linear-gradient(to bottom, #212121, #181818, #151515, #121212, #111 70%);
+  color: #fff;
+}
+
+#videoprojects .videoprojectstitle {
+  text-align: center;
+  font-family: cursive;
+}
+
+#videoprojects .vp1, #videoprojects .vp2, #videoprojects .vp3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-color: #111;
+  color: #fff;
+}
+
+#team .teambox {
+  max-width: 900px;
+  width: 80vw;
+}
+
+#team .teambox .teamtitle {
+  text-align: center;
+  font-family: cursive;
+}
+
+#team .teambox .teamcards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#team .teambox .teamcards .teamcard {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 2.5px;
+}
+
+#team .teambox .teamcards .teamcard h5 {
+  border-bottom: 1px solid transparent;
+}
+
+#team .teambox .teamcards .teamcard p {
+  color: #aaa;
+}
+
+#team .teambox .teamcards .teamcard .teamimg {
+  position: relative;
+  border: 5px solid transparent;
+  border-radius: 50%;
+}
+
+#team .teambox .teamcards .teamcard .teamimg .icons {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  opacity: 0;
+}
+
+#team .teambox .teamcards .teamcard .teamimg .icons i {
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+#team .teambox .teamcards .teamcard:hover {
+  background-color: #000;
+}
+
+#team .teambox .teamcards .teamcard:hover h5 {
+  border-color: orangered;
+}
+
+#team .teambox .teamcards .teamcard:hover .teamimg {
+  border-color: orangered;
+}
+
+#team .teambox .teamcards .teamcard:hover .teamimg img {
+  opacity: 0.3;
+}
+
+#team .teambox .teamcards .teamcard:hover .teamimg .icons {
+  opacity: 1;
+}
+
+#team .teambox .teamcards .teamcard:hover .teamimg .icons i:hover {
+  color: orangered;
+}
+
+#life {
+  background-color: #212121;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#111), color-stop(#151515), color-stop(#191919), color-stop(50%, #212121), color-stop(#191919), color-stop(#151515), to(#111));
+  background-image: linear-gradient(to bottom, #111, #151515, #191919, #212121 50%, #191919, #151515, #111);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+#life .lifebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+#life .lifebox .lifetitle {
+  text-align: center;
+  font-family: cursive;
+}
+
+#life .lifebox #lifeinmessi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#life .lifebox #lifeinmessi .carousel-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+#life .lifebox #lifeinmessi .lifesliders {
+  background-color: #252525;
+}
+
+#life .lifebox #lifeinmessi .lifesliders .carousel-control-prev, #life .lifebox #lifeinmessi .lifesliders carousel-control-next {
+  width: 10%;
+}
+
+#life .lifebox #lifeinmessi .lifesliders img {
+  width: 16%;
+}
+
+#news {
+  background-color: #111;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#111111f3), color-stop(#111112af), to(#111113b0)), url("../images/news/img.jpg");
+  background-image: linear-gradient(to bottom, #111111f3, #111112af, #111113b0), url("../images/news/img.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#news .newsbox {
+  max-width: 800px;
+  width: 90vw;
+}
+
+#news .newsbox .newstitle {
+  text-align: center;
+  font-family: cursive;
+}
+
+#blog {
+  background-color: #111;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#blog .blogbox {
+  max-width: 930px;
+  widows: 95vw;
+}
+
+#blog .blogbox .blogbody {
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blog .blogbox .blogbody .blogcard {
+  text-align: center;
+  background-color: #222;
+  margin: 5px;
+}
+
+#blog .blogbox .blogbody .blogcard img {
+  opacity: 0.8;
+}
+
+#blog .blogbox .blogbody .blogcard div {
+  padding: 10px;
+}
+
+#blog .blogbox .blogbody .blogcard:hover {
+  background-color: #6d563b;
+}
+
+#blog .blogbox .blogbody .blogcard:hover img {
+  opacity: 1;
+}
+
+#contact {
+  min-height: 500px;
+  background-color: #222;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contactbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  width: 100vw;
+}
+
+#contact .contactbox .map, #contact .contactbox .contactform {
+  width: 50%;
+  min-width: 300px;
+}
+
+#contact .contactbox .map iframe {
+  padding-top: 30px;
+  width: 100%;
+  height: 500px;
+}
+
+#contact .contactbox .contactform form {
+  padding-left: 10px;
+  min-width: 300px;
+  width: 75%;
+}
+
+#footer {
+  min-height: 150px;
+  background-color: #333;
+  color: #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#footer .copyrights a {
+  color: #fff;
+}
+
+#footer .copyrights a:hover {
+  color: orangered;
+}
+
+#footer .footerbox {
+  padding-top: 25px;
+  max-width: 900px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#footer .footerbox div {
+  width: 200px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#footer .footerbox div i {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#footer .footerbox div i:hover {
+  color: orangered;
+}
+
+#footer .footerbox div h6 {
+  color: #ccc;
+}
+
+#footer .footerbox div p {
+  font-size: 0.8rem;
+}
+
+.gradient {
+  height: 40px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), color-stop(#303030), color-stop(#272727), color-stop(#222222), color-stop(#151515), color-stop(#101010), color-stop(#050505), to(#000));
+  background-image: linear-gradient(to bottom, #333333, #303030, #272727, #222222, #151515, #101010, #050505, #000);
+}
+/*# sourceMappingURL=index.css.map */
