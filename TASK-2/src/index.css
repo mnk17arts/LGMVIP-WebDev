@@ -1,0 +1,8 @@
+body {
+  background-color: #222;
+}
+
+#app {
+  min-height: 100px;
+  background-color: #222;
+}

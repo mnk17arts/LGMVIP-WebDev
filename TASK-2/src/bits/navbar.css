@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+}
+
+@-webkit-keyframes Ahover {
+  0% {
+    border-bottom: 5px solid #f00;
+  }
+  25% {
+    border-bottom: 5px solid #fff;
+  }
+  50% {
+    border-bottom: 5px solid #0f0;
+  }
+  75% {
+    border-bottom: 5px solid #158beb;
+  }
+  100% {
+    border-bottom: 5px solid #ffa600;
+  }
+}
+
+@keyframes Ahover {
+  0% {
+    border-bottom: 5px solid #f00;
+  }
+  25% {
+    border-bottom: 5px solid #fff;
+  }
+  50% {
+    border-bottom: 5px solid #0f0;
+  }
+  75% {
+    border-bottom: 5px solid #158beb;
+  }
+  100% {
+    border-bottom: 5px solid #ffa600;
+  }
+}
+
+.navbar {
+  color: #000;
+  background-color: #111;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar button.getusers {
+  font-size: 30px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: rgba(0, 255, 42, 0.267) outset 2px;
+  text-decoration: none;
+  color: #00b300;
+  background-color: #0008;
+  -webkit-box-shadow: 2px 4px 5px #000;
+          box-shadow: 2px 4px 5px #000;
+  cursor: pointer;
+}
+
+.navbar button.getusers:hover {
+  border: #00ff2a inset 2px;
+  color: green;
+  background-color: #0d0d0d;
+  -webkit-box-shadow: 2px 4px 15px rgba(8, 248, 0, 0.425);
+          box-shadow: 2px 4px 15px rgba(8, 248, 0, 0.425);
+}
+
+.navbar button.getusers:active {
+  -webkit-box-shadow: 0px 0px 0px #000;
+          box-shadow: 0px 0px 0px #000;
+}
+
+.navbar a.messi {
+  font-size: 30px;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-bottom: 5px solid transparent;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar a.messi span {
+  color: #0f0;
+}
+
+.navbar a.messi:hover {
+  -webkit-animation-name: Ahover;
+          animation-name: Ahover;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+/*# sourceMappingURL=navbar.css.map */
